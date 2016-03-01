@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="login_header_blue">#0A2240</color>
+    <color name="login_submit_blue">#003C6D</color>
+    <color name="login_footer_blue">#107AD2</color>
+    <color name="home_header_blue">#0172CE</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="light_gray">#d3d3d3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="list_header_blue">#0483D4</color>
+    <color name="calendar_default_text_color">#000</color>
+    <color name="calendar_default_inactive_text_color">#555</color>
+    <color name="calendar_default_selection_text_color">#000</color>
+    <color name="calendar_default_cell_background_color">#0000</color>
+    <color name="calendar_default_cell_selection_background_color">#87bbff</color>
+    <color name="calendar_default_day_names_cell_background_color">#0000</color>
+    <color name="calendar_default_day_names_cell_text_color">#000</color>
+    <color name="datetimepicker_separator_color">#4b4848</color>
+
+</resources>

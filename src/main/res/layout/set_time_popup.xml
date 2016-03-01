@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#80000000"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="10" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="@drawable/set_time_background_shape"
+        android:orientation="vertical"
+        android:weightSum="10" >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:text="Time Setting"
+            android:textColor="#107AD2"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.05"
+            android:background="#107AD2"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="2"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="10" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:text="Current Time"
+                android:textColor="#107AD2"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <DigitalClock
+                android:id="@+id/digital_clock"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:textColor="#107AD2"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:format12Hour="hh:MM:ss aa"
+                android:gravity="center"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="2"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="10" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:text="Capture Duration"
+                android:textColor="#107AD2"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <Spinner
+                android:id="@+id/spinner_capture_duration"
+                android:layout_width="0dp"
+                android:gravity="center"
+                style="@style/Base.Widget.AppCompat.Spinner"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="2"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="10" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:text="Capture Interval"
+                android:textColor="#107AD2"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <Spinner
+                android:id="@+id/spinner_capture_interval"
+                android:layout_width="0dp"
+                style="@style/Widget.AppCompat.Spinner"
+                android:gravity="center"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:onClick="measureLux"
+            android:textStyle="bold"
+            android:text="Start"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
