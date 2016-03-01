@@ -55,7 +55,7 @@
         android:layout_weight="1"
         android:background="@drawable/footer"
         android:gravity="center"
-        android:text="Angels E Technology"
+        android:text="Solar Panel"
         android:textColor="@color/login_footer_blue"
         android:textSize="20sp"
         android:textStyle="bold" />
